@@ -19,6 +19,6 @@ Enable debug level on Arduino IDE to get a tip of what happened
 ## Credits:
 The example file is based and full compatible with [Official SD_MMC](https://github.com/espressif/arduino-esp32/tree/master/libraries/SD_MMC) and [Official SD SPI](https://github.com/espressif/arduino-esp32/tree/master/libraries/SD) libraries from Arduino ESP32.
 
-VSF is a modified version of [ESP32 SPIFFS example of LoBo.](https://github.com/loboris/ESP32_spiffs_example)
+VFS is a modified version of [ESP32 SPIFFS example of LoBo.](https://github.com/loboris/ESP32_spiffs_example)
 
 Low level things come from [Lua-RTOS-ESP32 of Jaume Olivé](https://github.com/whitecatboard/Lua-RTOS-ESP32) and [SPIFFS of Peter Andersson.](https://github.com/pellepl/spiffs)
