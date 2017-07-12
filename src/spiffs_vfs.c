@@ -639,21 +639,6 @@ static struct dirent *vfs_spiffs_readdir(DIR *pdir)
     // Clear current dirent
     memset(ent, 0, sizeof(struct dirent));
 
-    // If this is the first call to readdir for pdir, and
-    // directory is the root path, return the mounted point if any
-    if (!dir->read_mount)
-    {
-        if (strcmp(dir->path, "/") == 0)
-        {
-            strlcpy(ent->d_name, "/spiffs", MAXNAMLEN);
-            ent->d_type = DT_DIR;
-            dir->read_mount = 1;
-
-            return ent;
-        }
-        dir->read_mount = 1;
-    }
-
     // Search for next entry
     for (;;)
     {
