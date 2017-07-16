@@ -14,7 +14,7 @@ Enable debug level on Arduino IDE to get a tip of what happened
 
 ## Known Issues:
 - Probably it will not work with Flash encryption.
-- It doesn't support file upload yet.
+- It doesn't support file upload (ESP8266 Sketch Data Upload tool) yet.
 
 ## Credits:
 The example file is based and full compatible with [Official SD_MMC](https://github.com/espressif/arduino-esp32/tree/master/libraries/SD_MMC) and [Official SD SPI](https://github.com/espressif/arduino-esp32/tree/master/libraries/SD) libraries from Arduino ESP32.
