@@ -20,7 +20,7 @@
 #define SPIFFS_ERASE_SIZE 4096
 
 
-void vfs_spiffs_register(const char * mountpoint);
+int vfs_spiffs_register(const char * mountpoint);
 int spiffs_mount();
 int spiffs_unmount(int unreg);
 void spiffs_fs_stat(uint32_t *total, uint32_t *used);

@@ -918,10 +918,10 @@ exit:
 }
 
 //==========================
-void vfs_spiffs_register(const char *mountpoint)
+int vfs_spiffs_register(const char *mountpoint)
 {
     if (spiffs_is_registered)
-        return;
+        return 1;
 
     esp_vfs_t vfs = {
         .fd_offset = 0,
@@ -947,11 +947,11 @@ void vfs_spiffs_register(const char *mountpoint)
     if (res != ESP_OK)
     {
         log_i("Error, SPIFFS file system not registered");
-        return;
+        return 0;
     }
     spiffs_is_registered = 1;
 
-    spiffs_mount();
+    return spiffs_mount();
 }
 
 //=============================

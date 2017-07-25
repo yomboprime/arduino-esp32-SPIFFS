@@ -20,9 +20,12 @@ SPIFFSVFS::SPIFFSVFS(FSImplPtr impl) : FS(impl)
 
 bool SPIFFSVFS::begin(const char * mountpoint)
 {
-	vfs_spiffs_register(mountpoint);
-    _impl->mountpoint(mountpoint);
-	return true;
+	if(vfs_spiffs_register(mountpoint)){
+	    _impl->mountpoint(mountpoint);
+	    return true;
+	}
+	else
+        return false;
 }
 
 void SPIFFSVFS::end()
