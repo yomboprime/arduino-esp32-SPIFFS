@@ -1,6 +1,6 @@
 # SPIFFS library for ESP32 Arduino
 
-The SPIFFS filesystem is used to store files in the flash chip. This library provides a virtual file system (VFS) implementation of SPIFFS to Arduino ESP32. In a nutshell it can acts like a SDcard but using the internal flash memory.
+The SPI Flash File System (SPIFFS) is used to store files in the flash chip. This library provides a virtual file system (VFS) implementation of SPIFFS to Arduino ESP32. In a nutshell it can acts like a SDcard but using the internal flash memory.
 
 It's a unofficial library and will be deleted when an official one be done by EspressIf.
 
