@@ -14,8 +14,8 @@
 // From sdkconfig
 // On Arduino the values are defined based on this table: https://github.com/espressif/arduino-esp32/blob/master/tools/partitions/default.csv
 #define CONFIG_SPIFFS_LOG_PAGE_SIZE 256
-#define CONFIG_SPIFFS_BASE_ADDR 0x290000
-#define CONFIG_SPIFFS_SIZE 1507328
+#define CONFIG_SPIFFS_BASE_ADDR 0x291000
+#define CONFIG_SPIFFS_SIZE 1478656
 #define CONFIG_SPIFFS_LOG_BLOCK_SIZE 8192
 #define SPIFFS_ERASE_SIZE 4096
 
